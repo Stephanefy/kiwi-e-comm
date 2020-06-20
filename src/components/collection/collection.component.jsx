@@ -11,8 +11,8 @@ export default function Collection({ title, items }) {
                 {
                     items
                     .filter((item, idx) => idx < 4 )
-                    .map(({id, ...otherItemProps})=> (
-                        <CollectionItem key={id} {...otherItemProps}>{title}</CollectionItem>
+                    .map((item)=> (
+                        <CollectionItem key={item.id} item={item}>{title}</CollectionItem>
                     ))
                 }
             </div>
