@@ -1,7 +1,7 @@
 import React from 'react';
 import CollectionItem from '../collection-item/collection-item.component';
 
-import './collection.styles.scss'
+import './collection-preview.styles.scss'
 
 export default function Collection({ title, items }) {
     return (
